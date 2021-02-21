@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\CyclicRotationsTests.cs" />
+    <Compile Include="Arrays\OddOcurrencesInArrayTests.cs" />
     <Compile Include="Iterations\BinaryGapTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
