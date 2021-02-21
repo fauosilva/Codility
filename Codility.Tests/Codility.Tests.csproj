@@ -53,6 +53,7 @@
     <Compile Include="Arrays\OddOcurrencesInArrayTests.cs" />
     <Compile Include="Iterations\BinaryGapTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeComplexity\FrogJmpTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
