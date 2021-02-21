@@ -54,6 +54,7 @@
     <Compile Include="Iterations\BinaryGapTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimeComplexity\FrogJmpTests.cs" />
+    <Compile Include="TimeComplexity\PermMissingElemTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
