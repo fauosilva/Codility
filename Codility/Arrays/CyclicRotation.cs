@@ -10,7 +10,7 @@ namespace Codility.Arrays
     {
         public int[] Solution (int[] A, int K)
         {
-            Console.WriteLine($"Entry Array: {A}");
+            //Console.WriteLine($"Entry Array: {A}");
 
             if (K == 0 || A == null || A.Length == 0)
                 return A;
@@ -22,14 +22,12 @@ namespace Codility.Arrays
             int[] returnArray = new int[A.Length];
             for(int i = 0; i < A.Length; i++)
             {
-                int modPosition = (i + mod) % A.Length;
-                if (modPosition - 1 >= 0)
-                    returnArray[i] = A[modPosition - 1];
-                else
-                    returnArray[i] = A[A.Length -1];
+                //Rotate K into i position element. Uses mod reset the position after the array lenght.
+                var returnArrayPosition = (K + i) % A.Length;
+                returnArray[returnArrayPosition] = A[i];
             }
 
-            Console.WriteLine($"Return Array: {A}");
+            //Console.WriteLine($"Return Array: {A}");
             return returnArray;
         }
     }

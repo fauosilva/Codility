@@ -20,7 +20,27 @@ namespace Codility.Tests.Arrays
             var rotationResult = CyclicRotationSolver.Solution(TestArray, rotation);
 
             Assert.AreEqual(rotationResult.Length, RotatedArray.Length);
-            for(int i = 0; i< rotationResult.Length; i++)
+            for (int i = 0; i < rotationResult.Length; i++)
+            {
+                Assert.AreEqual(rotationResult[i], RotatedArray[i]);
+            }
+        }
+
+        [TestMethod]
+        public void TwoElements()
+        {
+            //Arrange
+            var CyclicRotationSolver = new CyclicRotation();
+            //Act
+            var TestArray = new int[] { 5, -1000 };
+            var RotatedArray = new int[] { -1000, 5 };
+            var rotation = 1;
+
+            //Test
+            var rotationResult = CyclicRotationSolver.Solution(TestArray, rotation);
+
+            Assert.AreEqual(rotationResult.Length, RotatedArray.Length);
+            for (int i = 0; i < rotationResult.Length; i++)
             {
                 Assert.AreEqual(rotationResult[i], RotatedArray[i]);
             }
